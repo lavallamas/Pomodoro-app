@@ -1,8 +1,19 @@
 def timer():
     print("timer")
 def task_list():
+    def todo_editor():
+        print("Ok lets Get started")
+        
+
     tasks = [1, 2, 3]
     print("To-Do", *tasks, sep="\n")
+    edit_tasks = input("would you like to edit your list?")
+    if edit_tasks == "y":
+        todo_editor()
+    elif edit_tasks == "n":
+        print("Ok sounds good")
+        print("To-Do", *tasks, sep="\n")
+
     
 def daily_schedule():
     print("placeholder")
